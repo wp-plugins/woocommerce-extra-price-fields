@@ -21,6 +21,7 @@ where it is required to show product price per 100gm or per 100 piece along with
 
 * Supports latest woocommerce
 * Automatically shows price in front end , no setting required
+*  Please send me your feedback  <a href="http://amansaini.me/contact/">here</a> for any new features you want to see in next version of this plugin.I will be glad to receive feedback.
 
 
 == Installation ==
@@ -36,6 +37,9 @@ To install Woocommerce Extra Price Fields, follow these steps:
 = How to use it? =
 
 Install it and edit/create a new product. Add the info into the newly created fields under price box.For more Info check the screenshots.
+
+= Have Feedback =
+Please send me your feedback  <a href="http://amansaini.me/contact/">here</a> for any new features you want to see in next version of this plugin.I will be glad to receive feedback.
 
 
 == Screenshots ==
@@ -56,7 +60,4 @@ Install it and edit/create a new product. Add the info into the newly created fi
 = 1.0 =
 * First stable version released.
 
-== Feedback ==
 
-Please contact me <a href="http://amansaini.me/contact/">here</a> for any new features you want to see in next version of this plugin.
-I will be glad to receive feedback.
