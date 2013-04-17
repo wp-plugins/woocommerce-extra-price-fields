@@ -14,8 +14,7 @@ Woocommerce Extra Price Fields is Plugin for adding extra price description to s
 
 Woocommerce Extra Price Fields is Plugin for adding extra price description to show in front end.This is very usefull for the users in countries/regions
 where it is required to show product price per 100gm or per 100 piece along with the product solo price.
-Please contact me <a href="http://amansaini.me/contact/">here</a> for any new features you want to see in next version of this plugin.
-I will be glad to receive feedback.
+
 
 
 = Features: =
@@ -56,3 +55,8 @@ Install it and edit/create a new product. Add the info into the newly created fi
 
 = 1.0 =
 * First stable version released.
+
+== Feedback ==
+
+Please contact me <a href="http://amansaini.me/contact/">here</a> for any new features you want to see in next version of this plugin.
+I will be glad to receive feedback.
