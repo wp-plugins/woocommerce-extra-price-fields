@@ -5,7 +5,7 @@
   Author: Aman Saini
   Author URI: https://amansaini.me
   Plugin URI: http://amansaini.me/plugins/woocommerce-extra-price-fields/
-  Version: 1.0
+  Version: 1.1
   Requires at least: 3.0.0
   Tested up to: 3.5.1
 
