@@ -30,10 +30,7 @@
 
   function add_custom_price_box() {
 
-  	woocommerce_wp_text_input(array('id' => 'pro_price_extra_info', 'class' => 'wc_input_price_extra_info short', 'label' => __('Price Extra Info', 'woocommerce') . ' (' . get_woocommerce_currency_symbol() . ')', 'type' => 'number', 'custom_attributes' => array(
-  	                          'step' => 'any',
-  	                          'min' => '0'
-  	                          )));
+  	woocommerce_wp_text_input(array('id' => 'pro_price_extra_info', 'class' => 'wc_input_price_extra_info short', 'label' => __('Price Extra Info', 'woocommerce') ));
 
 
   }
