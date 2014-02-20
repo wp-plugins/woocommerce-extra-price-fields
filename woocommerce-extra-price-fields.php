@@ -7,7 +7,7 @@
   Plugin URI: http://amansaini.me/plugins/woocommerce-extra-price-fields/
   Version: 1.1.1
   Requires at least: 3.0.0
-  Tested up to: 3.5.1
+  Tested up to: 3.8.1
 
  */
 
@@ -27,50 +27,73 @@
  */
 
 
+/**
+ * Add the input box below price in add/edit product page
+ *
+ * @author Aman Saini
+ * @since  1.0
+ */
+function add_custom_price_box() {
 
-  function add_custom_price_box() {
+	woocommerce_wp_text_input( array( 'id' => 'pro_price_extra_info', 'class' => 'wc_input_price_extra_info short', 'label' => __( 'Price Extra Info', 'woocommerce' ) ) );
 
-  	woocommerce_wp_text_input(array('id' => 'pro_price_extra_info', 'class' => 'wc_input_price_extra_info short', 'label' => __('Price Extra Info', 'woocommerce') ));
+}
+
+add_action( 'woocommerce_product_options_pricing', 'add_custom_price_box' );
 
 
-  }
 
-  add_action('woocommerce_product_options_pricing', 'add_custom_price_box');
+/**
+ * Save the value in custom varibale on product save
+ *
+ * @author Aman Saini
+ * @since  1.0
+ * @param  integar $post_id
+ * @param  object $post
+ * @return void
+ */
+function custom_woocommerce_process_product_meta($post_id, $post) {
 
-  function custom_woocommerce_process_product_meta($post_id, $post) {
+	update_post_meta( $post_id, 'pro_price_extra_info', stripslashes($_POST['pro_price_extra_info'] ) );
+}
 
-  	update_post_meta($post_id, 'pro_price_extra_info', stripslashes($_POST['pro_price_extra_info']));
-  }
+add_action( 'woocommerce_process_product_meta', 'custom_woocommerce_process_product_meta', 2, 2 );
 
-  add_action('woocommerce_process_product_meta', 'custom_woocommerce_process_product_meta', 2, 2);
+/**
+ * Add the Extra price info with the text to show in frontend
+ *
+ * @author Aman Saini
+ * @since  1.0
+ * @param  object $obj
+ * @return Product price
+ */
 
-  function add_custom_price_front($p, $obj) {
+function add_custom_price_front( $p, $obj ) {
 
-  	$post_id = $obj->post->ID;
+	$post_id = $obj->post->ID;
 
-  	$pro_price_extra_info = get_post_meta($post_id, 'pro_price_extra_info', true);
+	$pro_price_extra_info = get_post_meta( $post_id, 'pro_price_extra_info', true );
 
-  	if (is_admin()) {
+	if (is_admin()) {
   			//show in new line
-  		$tag = 'div';
-  	} else {
-  		$tag = 'span';
-  	}
+		$tag = 'div';
+	} else {
+		$tag = 'span';
+	}
 
-  	if (!empty($pro_price_extra_info)) {
-  		$additional_price= "<$tag style='font-size:80%' class='pro_price_extra_info'> $pro_price_extra_info</$tag>";
-  	}
-
-
-  	if( !empty($additional_price)	 )
-  		return  $p . $additional_price ;
-  	else
-  		return  $p ;
+	if ( !empty($pro_price_extra_info ) ) {
+		$additional_price = "<$tag style='font-size:80%' class='pro_price_extra_info'> $pro_price_extra_info</$tag>";
+	}
 
 
+	if( !empty( $additional_price ) )
+		return  $p . $additional_price ;
+	else
+		return  $p ;
 
-  }
 
-  add_filter('woocommerce_get_price_html', 'add_custom_price_front', 10, 2);
+}
 
-  ?>
+add_filter('woocommerce_get_price_html', 'add_custom_price_front', 10, 2);
+
+?>
