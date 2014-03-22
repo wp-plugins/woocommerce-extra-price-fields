@@ -50,6 +50,10 @@ Please send me your feedback  <a href="http://amansaini.me/contact/">here</a> fo
 
 == Changelog ==
 
+= 1.2 =
+* Now works with variable products.
+
+
 = 1.1.1 =
 * Chanegd the field to string from number in admin
 * Updated backend screenshot
