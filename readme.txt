@@ -4,7 +4,7 @@ Donate link: http://amansaini.me/
 Requires at least: 3.0.5
 Tags:woocommerce,ecommerce,woocommerce price extension
 Tested up to: 3.8.1
-Stable tag: 1.1.1
+Stable tag: 1.2
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -21,6 +21,11 @@ It can  be used to show extra info with price e.g $250 per 100gm
 * Supports latest woocommerce
 * Automatically shows price in front end , no setting required
 *  Please send me your feedback  <a href="http://amansaini.me/contact/">here</a> for any new features you want to see in next version of this plugin.I will be glad to receive feedback.
+
+= Want to contribute =
+
+If you want to contribute , please check the github repo
+https://github.com/aman086/Woocommerce-extra-price-fields
 
 
 == Installation ==
@@ -49,6 +54,10 @@ Please send me your feedback  <a href="http://amansaini.me/contact/">here</a> fo
 
 
 == Changelog ==
+
+= 1.2 =
+* Now works with variable products.
+
 
 = 1.1.1 =
 * Chanegd the field to string from number in admin
