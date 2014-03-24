@@ -22,6 +22,11 @@ It can  be used to show extra info with price e.g $250 per 100gm
 * Automatically shows price in front end , no setting required
 *  Please send me your feedback  <a href="http://amansaini.me/contact/">here</a> for any new features you want to see in next version of this plugin.I will be glad to receive feedback.
 
+== Want to contribute ==
+
+If you want to contribute , please check the github repo
+https://github.com/aman086/Woocommerce-extra-price-fields
+
 
 == Installation ==
 
