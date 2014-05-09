@@ -7,7 +7,7 @@
   Plugin URI: http://amansaini.me/plugins/woocommerce-extra-price-fields/
   Version: 1.2
   Requires at least: 3.0.0
-  Tested up to: 3.8.1
+  Tested up to: 3.9.1
 
  */
 
