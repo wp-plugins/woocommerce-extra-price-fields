@@ -3,8 +3,8 @@ Contributors: aman086
 Donate link: http://amansaini.me/
 Requires at least: 3.0.5
 Tags:woocommerce,ecommerce,woocommerce price extension
-Tested up to: 3.9.1
-Stable tag: 1.2
+Tested up to: 4.0
+Stable tag: 1.3
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -55,12 +55,15 @@ Please send me your feedback  <a href="http://amansaini.me/contact/">here</a> fo
 
 == Changelog ==
 
+= 1.3 =
+* Fixed warnings.
+
 = 1.2 =
 * Now works with variable products.
 
 
 = 1.1.1 =
-* Chanegd the field to string from number in admin
+* Changed the field to string from number in admin
 * Updated backend screenshot
 
 = 1.1 =
