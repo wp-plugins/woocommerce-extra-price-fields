@@ -5,9 +5,9 @@
   Author: Aman Saini
   Author URI: https://amansaini.me
   Plugin URI: http://amansaini.me/plugins/woocommerce-extra-price-fields/
-  Version: 1.2
+  Version: 1.3
   Requires at least: 3.0.0
-  Tested up to: 3.9.1
+  Tested up to: 4.0
 
  */
 
@@ -38,15 +38,15 @@
 
 
 
-  function custom_woocommerce_process_product_meta($post_id, $post) {
+  function custom_woocommerce_process_product_meta($post_id) {
 
 
 
     update_post_meta($post_id, 'pro_price_extra_info', stripslashes($_POST['pro_price_extra_info']));
   }
 
-  add_action('woocommerce_process_product_meta', 'custom_woocommerce_process_product_meta', 2, 2);
-  add_action('woocommerce_process_product_meta_variable', 'custom_woocommerce_process_product_meta', 2, 2);
+  add_action('woocommerce_process_product_meta', 'custom_woocommerce_process_product_meta', 2);
+  add_action('woocommerce_process_product_meta_variable', 'custom_woocommerce_process_product_meta', 2);
 
 
   function add_custom_price_front($p, $obj) {
