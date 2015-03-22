@@ -4,7 +4,7 @@ Donate link: http://amansaini.me/
 Requires at least: 3.0.5
 Tags:woocommerce,ecommerce,woocommerce price extension
 Tested up to: 4.0
-Stable tag: 1.3
+Stable tag: 1.4
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -54,6 +54,8 @@ Please send me your feedback  <a href="http://amansaini.me/contact/">here</a> fo
 
 
 == Changelog ==
+= 1.4 =
+* Fixed issue with info not showing up for variable prices.
 
 = 1.3 =
 * Fixed warnings.
